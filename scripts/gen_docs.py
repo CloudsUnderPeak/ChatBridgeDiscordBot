@@ -42,6 +42,7 @@ def build_commands(translations, meta):
             "command":  c.get("command", f"!{name}"),
             "alias":    c.get("alias", []),
             "desc":     c.get("desc", ""),
+            "example":  c.get("example", ""),
             "function": m.get("function", ""),
             "level":    m.get("level", 0),
         })
@@ -59,12 +60,16 @@ def render_command(cmd):
     if cmd["alias"]:
         alias_html = f'<span class="alias">[ {" / ".join(cmd["alias"])} ]</span>'
     badge = LEVEL_LABEL.get(cmd["level"], "")
+    example_html = ""
+    if cmd["example"]:
+        example_html = f'<div class="cmd-example">範例：<code>{cmd["example"]}</code></div>'
     return f"""
       <div class="cmd">
         <div class="cmd-header">
           <code>{cmd["command"]}</code>{alias_html}{badge}
         </div>
         <div class="cmd-desc">{cmd["desc"]}</div>
+        {example_html}
       </div>"""
 
 def render_group(fn, cmds):
@@ -97,6 +102,7 @@ def render_html(groups):
             border-radius: 4px; font-size: 0.95em; }}
     .alias {{ color: #949ba4; font-size: 0.85em; }}
     .cmd-desc {{ color: #b5bac1; margin-top: 4px; font-size: 0.9em; }}
+    .cmd-example {{ color: #949ba4; margin-top: 4px; font-size: 0.85em; }}
     .badge {{ padding: 2px 6px; border-radius: 4px; font-size: 0.75em; font-weight: bold; }}
     .badge.admin {{ background: #ed4245; color: white; }}
     .badge.moderator {{ background: #f0b232; color: black; }}

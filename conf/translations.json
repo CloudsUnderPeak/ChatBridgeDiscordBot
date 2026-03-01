@@ -30,14 +30,16 @@
               "alias": [
                 "!mi"
               ],
-              "desc": "與AI聊天"
+              "desc": "與AI聊天",
+              "example": "!ai 今天天氣如何?"
             },
             "guess": {
               "command": "!guess <message>",
               "alias": [
                 "!猜"
               ],
-              "desc": "玩猜數字遊戲"
+              "desc": "玩猜數字遊戲",
+              "example": "!guess 42"
             },
             "resetguess": {
               "command": "!resetguess",
@@ -49,7 +51,8 @@
             "1a2b": {
               "command": "!1a2b <message>",
               "alias": [],
-              "desc": "玩1a2b遊戲"
+              "desc": "玩1a2b遊戲",
+              "example": "!1a2b 1234"
             },
             "reset1a2b": {
               "command": "!reset1a2b",
@@ -75,14 +78,16 @@
               "alias": [
                 "!賭"
               ],
-              "desc": "玩比大小數字遊戲"
+              "desc": "玩比大小數字遊戲",
+              "example": "!gamble 100"
             },
             "slot": {
               "command": "!slot <amount>",
               "alias": [
                 "!拉霸"
               ],
-              "desc": "玩拉霸機遊戲"
+              "desc": "玩拉霸機遊戲",
+              "example": "!slot 50"
             },
             "chips": {
               "command": "!chips",
@@ -103,7 +108,8 @@
               "alias": [
                 "!給"
               ],
-              "desc": "給予其他玩家代幣"
+              "desc": "給予其他玩家代幣",
+              "example": "!give @玩家 100"
             }
           }
         },
