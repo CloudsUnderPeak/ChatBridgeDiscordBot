@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot 指令說明</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           max-width: 800px; margin: 40px auto; padding: 0 20px;
+           background: #1e1f22; color: #dbdee1; }
+    h1 { color: #ffffff; border-bottom: 2px solid #5865f2; padding-bottom: 8px; }
+    h2 { color: #5865f2; margin-top: 32px; }
+    .cmd { background: #2b2d31; border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+    .cmd-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    code { background: #111214; color: #00b0f4; padding: 2px 8px;
+            border-radius: 4px; font-size: 0.95em; }
+    .alias { color: #949ba4; font-size: 0.85em; }
+    .cmd-desc { color: #b5bac1; margin-top: 4px; font-size: 0.9em; }
+    .badge { padding: 2px 6px; border-radius: 4px; font-size: 0.75em; font-weight: bold; }
+    .badge.admin { background: #ed4245; color: white; }
+    .badge.moderator { background: #f0b232; color: black; }
+    .badge.user { background: #23a559; color: white; }
+    footer { margin-top: 48px; color: #4e5058; font-size: 0.8em; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>📖 Bot 指令說明</h1>
+  
+    <section>
+      <h2>通用</h2>
+      
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!help</code><span class="alias">[ !h / !幫助 ]</span>
+        </div>
+        <div class="cmd-desc">列出所有可用指令</div>
+      </div>
+    </section>
+    <section>
+      <h2>基本</h2>
+      
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!hi</code><span class="alias">[ !嗨 / !安 ]</span>
+        </div>
+        <div class="cmd-desc">打招呼</div>
+      </div>
+    </section>
+    <section>
+      <h2>AI</h2>
+      
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!ai <message></code><span class="alias">[ !mi ]</span>
+        </div>
+        <div class="cmd-desc">與AI聊天</div>
+      </div>
+    </section>
+    <section>
+      <h2>遊戲中心</h2>
+      
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!guess <message></code><span class="alias">[ !猜 ]</span>
+        </div>
+        <div class="cmd-desc">玩猜數字遊戲</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!resetguess</code><span class="alias">[ !重猜 ]</span>
+        </div>
+        <div class="cmd-desc">重置猜數字遊戲</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!1a2b <message></code>
+        </div>
+        <div class="cmd-desc">玩1a2b遊戲</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!reset1a2b</code><span class="alias">[ !重1a2b ]</span>
+        </div>
+        <div class="cmd-desc">重置1a2b遊戲</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!peek1a2b</code><span class="badge admin">Admin</span>
+        </div>
+        <div class="cmd-desc">偷看1a2b遊戲答案</div>
+      </div>
+    </section>
+    <section>
+      <h2>賭場</h2>
+      
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!rank</code><span class="alias">[ !排行 ]</span>
+        </div>
+        <div class="cmd-desc">取得前三名排行版</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!gamble <amount></code><span class="alias">[ !賭 ]</span>
+        </div>
+        <div class="cmd-desc">玩比大小數字遊戲</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!slot <amount></code><span class="alias">[ !拉霸 ]</span>
+        </div>
+        <div class="cmd-desc">玩拉霸機遊戲</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!chips</code><span class="alias">[ !代幣 ]</span>
+        </div>
+        <div class="cmd-desc">顯示你的代幣數</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!repay</code><span class="alias">[ !還錢 ]</span>
+        </div>
+        <div class="cmd-desc">如果破產，恢復代幣成預設值</div>
+      </div>
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!give <name> <amount></code><span class="alias">[ !給 ]</span><span class="badge admin">Admin</span>
+        </div>
+        <div class="cmd-desc">給予其他玩家代幣</div>
+      </div>
+    </section>
+    <section>
+      <h2>測試</h2>
+      
+      <div class="cmd">
+        <div class="cmd-header">
+          <code>!testerror</code><span class="badge admin">Admin</span>
+        </div>
+        <div class="cmd-desc"></div>
+      </div>
+    </section>
+  <footer>自動生成於 2026-03-01 19:34 UTC+8</footer>
+</body>
+</html>

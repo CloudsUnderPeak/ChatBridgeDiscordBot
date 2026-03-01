@@ -1,0 +1,17 @@
+{
+  "help":       {"function": "help",       "level": 0},
+  "hi":         {"function": "basic",      "level": 0},
+  "ai":         {"function": "ai",         "level": 0},
+  "guess":      {"function": "gamecenter", "level": 0},
+  "resetguess": {"function": "gamecenter", "level": 0},
+  "1a2b":       {"function": "gamecenter", "level": 0},
+  "reset1a2b":  {"function": "gamecenter", "level": 0},
+  "peek1a2b":   {"function": "gamecenter", "level": 3},
+  "rank":       {"function": "gamble",     "level": 0},
+  "gamble":     {"function": "gamble",     "level": 0},
+  "slot":       {"function": "gamble",     "level": 0},
+  "chips":      {"function": "gamble",     "level": 0},
+  "repay":      {"function": "gamble",     "level": 0},
+  "give":       {"function": "gamble",     "level": 3},
+  "testerror":  {"function": "test",       "level": 3}
+}

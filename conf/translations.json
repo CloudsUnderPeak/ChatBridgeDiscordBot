@@ -1,0 +1,163 @@
+{
+  "zh": {
+    "discord": {
+      "api": {
+        "basic": {
+          "hi": "你好啊! Hello World 😃"
+        },
+        "help": {
+          "title": "** 可用指令列表 **\n",
+          "url": "📖 指令說明：%s",
+          "content": {
+            "help": {
+              "command": "!help",
+              "alias": [
+                "!h",
+                "!幫助"
+              ],
+              "desc": "列出所有可用指令"
+            },
+            "hi": {
+              "command": "!hi",
+              "alias": [
+                "!嗨",
+                "!安"
+              ],
+              "desc": "打招呼"
+            },
+            "ai": {
+              "command": "!ai <message>",
+              "alias": [
+                "!mi"
+              ],
+              "desc": "與AI聊天"
+            },
+            "guess": {
+              "command": "!guess <message>",
+              "alias": [
+                "!猜"
+              ],
+              "desc": "玩猜數字遊戲"
+            },
+            "resetguess": {
+              "command": "!resetguess",
+              "alias": [
+                "!重猜"
+              ],
+              "desc": "重置猜數字遊戲"
+            },
+            "1a2b": {
+              "command": "!1a2b <message>",
+              "alias": [],
+              "desc": "玩1a2b遊戲"
+            },
+            "reset1a2b": {
+              "command": "!reset1a2b",
+              "alias": [
+                "!重1a2b"
+              ],
+              "desc": "重置1a2b遊戲"
+            },
+            "peek1a2b": {
+              "command": "!peek1a2b",
+              "alias": [],
+              "desc": "偷看1a2b遊戲答案"
+            },
+            "rank": {
+              "command": "!rank",
+              "alias": [
+                "!排行"
+              ],
+              "desc": "取得前三名排行版"
+            },
+            "gamble": {
+              "command": "!gamble <amount>",
+              "alias": [
+                "!賭"
+              ],
+              "desc": "玩比大小數字遊戲"
+            },
+            "slot": {
+              "command": "!slot <amount>",
+              "alias": [
+                "!拉霸"
+              ],
+              "desc": "玩拉霸機遊戲"
+            },
+            "chips": {
+              "command": "!chips",
+              "alias": [
+                "!代幣"
+              ],
+              "desc": "顯示你的代幣數"
+            },
+            "repay": {
+              "command": "!repay",
+              "alias": [
+                "!還錢"
+              ],
+              "desc": "如果破產，恢復代幣成預設值"
+            },
+            "give": {
+              "command": "!give <name> <amount>",
+              "alias": [
+                "!給"
+              ],
+              "desc": "給予其他玩家代幣"
+            }
+          }
+        },
+        "gamecenter": {
+          "not_available": "遊戲 %s 不存在或未啟用",
+          "reset_success": "遊戲重置成功",
+          "guess_number": {
+            "welcome": "歡迎來到猜數字同樂遊戲!支援多人參加喔!",
+            "input": "請輸入 1~%d 的數字",
+            "gameplay": "我會告訴你這個數字距離正確數字的範圍，或者輸入 !resetguess 來重置遊戲。",
+            "format_error": "請輸入正確的數字格式: 1~%d",
+            "higher_number": "**%s** 猜的數字 %d 太高",
+            "lower_number": "**%s** 猜的數字 %d 太低",
+            "congratulations": "恭喜 **%s** 猜對了! 正確數字是 %d"
+          },
+          "bulls_and_cows": {
+            "welcome": "歡迎來到 1A2B 同樂遊戲!支援多人參加喔!",
+            "input": "請輸入 4 位不重複的數字(0~9)",
+            "gameplay": "我會告訴你有幾個數字正確且位置正確 (A)，有幾個數字正確但位置不正確 (B)。或者輸入 !reset1a2b 來重置遊戲。",
+            "format_error": "請輸入正確的數字格式: 4 位不重複的數字(0~9)",
+            "user_guess": "**%s** 猜的數字是 %s 有 %dA%dB",
+            "congratulations": "恭喜 **%s** 猜對了正確數字!",
+            "peek": "答案是: ||%s||",
+            "peek_no_game": "目前沒有進行中的遊戲"
+          }
+        },
+        "gamble": {
+          "not_available": "遊戲 %s 不存在或未啟用",
+          "get_chips": "**%s** 目前有 %d 代幣",
+          "give_chips": "給了 %d 代幣",
+          "top3": "前三名排行板:",
+          "rank_number": "Rank %d: **%s** 有 %d 代幣",
+          "not_enough": "**%s** 沒有足夠的代幣",
+          "not_enough_min": "最小下注籌碼是 %d 代幣",
+          "format_error": "請輸入正確的數字格式",
+          "bigger_number": {
+            "show": "**%s** 開出 %d, 莊家開出 %d",
+            "win": "✅ 你贏了! 獲得 %d 代幣",
+            "lose": "❌ 你輸了! 失去 %d 代幣"
+          },
+          "slot_machine": {
+            "symbols": [
+              "🍎",
+              "🍊",
+              "🍋",
+              "🍇",
+              "🍓"
+            ],
+            "show": "**%s** 開出 %s | %s | %s",
+            "win": "✅ 你贏了! 獲得 %d 代幣 x %.1f !",
+            "lose": "❌ 你輸了! 失去 %d 代幣"
+          }
+        }
+      }
+    }
+  }
+}

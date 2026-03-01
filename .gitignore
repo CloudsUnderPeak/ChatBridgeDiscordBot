@@ -1,0 +1,12 @@
+build/
+vendor/
+data/
+tmp/
+.claude/
+
+conf/discord.yaml
+
+*.log
+*.app
+
+deploy.sh

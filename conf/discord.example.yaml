@@ -1,0 +1,42 @@
+bots:
+  - name: YourBotName
+    token: YOUR_DISCORD_BOT_TOKEN
+    enabled: true
+    functions:
+      - "basic"
+      - "ai"
+      - "gamecenter"
+      - "gamble"
+      - "test"
+    helpUrl: "https://<USERNAME>.github.io/<REPO>/"
+    logChannels:
+      - id: "YOUR_DISCORD_LOG_CHANNEL_ID"
+    channels:
+      - id: "YOUR_DISCORD_CHANNEL_ID_1"
+        functions:
+          - "basic"
+          - "ai"
+      - id: "YOUR_DISCORD_CHANNEL_ID_2"
+        functions:
+          - "basic"
+          - "gamecenter"
+          - "gamble"
+    aiAgent:
+      provider: "openai"
+      model: "gpt-4o-mini"
+      queueLength: 10
+      prompt:
+        - "You are a helpful assistant."
+        # Add more prompt instructions here
+
+users:
+  - id: "YOUR_USER_DISCORD_ID"
+    level: 3
+
+gamble:
+  principal: 1000
+  biggerNumber:
+    odds: 0.5
+    ante: 0
+  slotMachine:
+    ante: 0

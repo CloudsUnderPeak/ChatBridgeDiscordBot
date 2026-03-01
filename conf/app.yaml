@@ -1,0 +1,7 @@
+log:
+  path: "./data/chatbot.log"
+  level: "debug"
+
+apiKey:
+  # OPENAI_API_KEY
+  openaiKey: "YOUR_OPENAI_API_KEY"

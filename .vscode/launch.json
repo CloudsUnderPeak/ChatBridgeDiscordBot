@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceRoot}",
+            "windows": {
+                "env": {
+                    "GOPATH": "${env:GOPATH};${workspaceRoot}",
+                    "EXECUTION_PATH": "${workspaceFolder}/"
+                }
+            },
+            "linux": {
+                "env": {
+                    "GOPATH": "${env:GOPATH}:${workspaceRoot}",
+                    "EXECUTION_PATH": "${workspaceFolder}/"
+                }
+            },
+            "osx": {
+                "env": {
+                    "GOPATH": "${env:GOPATH}:${workspaceRoot}",
+                    "EXECUTION_PATH": "${workspaceFolder}/"
+                }
+            },
+            "args": []
+        }
+    ]
+}
