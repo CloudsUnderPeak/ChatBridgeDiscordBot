@@ -92,7 +92,7 @@
             "chips": {
               "command": "!chips",
               "alias": [
-                "!代幣"
+                "!小魚乾"
               ],
               "desc": "顯示你的代幣數"
             },
