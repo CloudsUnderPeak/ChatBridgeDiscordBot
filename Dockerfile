@@ -6,29 +6,8 @@ WORKDIR /app
 
 COPY . .
 
-# 根據 GOARCH 決定使用哪個 make target 編譯
-# RUN if [ "$PLATFORM" = "linux/arm" ]; then \
-#       make build; \
-#     elif [ "$PLATFORM" = "linux/arm64" ]; then \
-#       make build-arm64; \
-#     elif [ "$PLATFORM" = "linux/amd64" ]; then \
-#       make build-linux; \
-#     else \
-#       make build; \
-#     fi
-
-
 ARG BUILD_PLATFORM="linux/arm64"
 ARG BUILD_DATE
-# RUN if [ "$BUILD_PLATFORM" = "linux/arm" ]; then \
-#       echo 1 > ./platform; \
-#     elif [ "$BUILD_PLATFORM" = "linux/arm64" ]; then \
-#       echo 2 > ./platform; \
-#     elif [ "$BUILD_PLATFORM" = "linux/amd64" ]; then \
-#       echo 3 > ./platform; \
-#     else \
-#       echo 4 > ./platform; \
-#     fi
 
 RUN make build BUILD_PLATFORM=${BUILD_PLATFORM} DATE=${BUILD_DATE}
 # RUN make build BUILD_PLATFORM=${BUILD_PLATFORM}

@@ -5,8 +5,10 @@ tmp/
 .claude/
 
 conf/discord.yaml
+conf/app.example.yaml
 
 *.log
 *.app
 
 deploy.sh
+.DS_Store
